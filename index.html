@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index.css">
+	<title>RichText</title>
+</head>
+	
+	<!--  编辑器按钮 -->
+	<!-- 加粗 -->
+	<button onClick="action(this)" data-event="bold" data-value="true">粗体</button>
+	<!-- formatBlock 可以插入块级元素 -->
+	<button onClick="action(this)" data-event="formatBlock" data-value="p">段落</button>
+	<button onClick="action(this)" data-event="formatBlock" data-value="h1">H2</button>
+	<button onClick="action(this)" data-event="formatBlock" data-value="h2">H2</button>
+	<button onClick="action(this)" data-event="formatBlock" data-value="h3">H3</button>
+
+
+	<!--  contenteditable 可以读取子 DOM，也可以操作子 DOM -->
+	<div 
+		id="editor"
+		contenteditable="true" 
+		class="main-container">
+		<h1>这是一个子内容</h1>
+		<p>这是一段段落这是一段段落这是一段段落这是一段段落</p>
+	</div>
+	
+
+</body>
+	<script src="./index.js"></script>
+</html>
